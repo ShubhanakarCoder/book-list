@@ -15,16 +15,18 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SearchResult from './Components/SearchResult';
+import Fetching from './Components/Fetching';
 
 function App() {
   return (
     <>
-      {/* <Navbar/> */}
+      <Navbar/>
+      
      
-                <Routes>
-                    <Route path="/" exact element={<Navbar />} />
-                    <Route path="/:query/:startIndex" exact element={<SearchResult  />} />
-                </Routes>
+                {/* <Routes>
+                    {/* <Route path="/" exact element={<Navbar />} /> */}
+                    {/* <Route path="/:query/:startIndex" exact element={<SearchResult  />} />
+                </Routes> */} 
         
     </>
     
